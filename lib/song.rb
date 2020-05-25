@@ -7,6 +7,7 @@ class Song
     @name = name
     @artist = artist
     @@all << self
+    save
   end
 
   def self.all
@@ -19,6 +20,6 @@ class Song
     else
       nil
     end
-  end 
+  end
 
 end
