@@ -24,13 +24,13 @@ class Artist
     # @@song_count +=1
   end
 
-  def songs
+  # def songs
     # @songs
     def songs
     Song.all.select {|song| song.artist == self}
   end
 
-  end
+  # end
 
   def self.song_count
     @@song_count
