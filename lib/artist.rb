@@ -27,6 +27,6 @@ class Artist
   end
 
   def self.song_count
-    Song.all.select {|song| song.artist += 1}
+    Song.all.each {|song| song.artist += 1}
   end
 end
