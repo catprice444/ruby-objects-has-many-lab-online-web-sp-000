@@ -21,7 +21,7 @@ class Artist
     song = Song.new(name)
     self.songs << song
     song.artist = self
-    Artist.each do |song|
+    Song.all.each do |song|
       @@song_count +=1
     end 
   end
