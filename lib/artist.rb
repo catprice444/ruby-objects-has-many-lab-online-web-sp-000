@@ -43,7 +43,7 @@ class Artist
     @@song_count +=1
   end
 
-  def songs(name)
+  def songs(title)
     @songs
   end
 
