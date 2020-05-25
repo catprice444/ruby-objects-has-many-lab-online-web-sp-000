@@ -22,7 +22,9 @@ class Author
    post = Post.new(title)
    self.posts << post
    post.author = self
-   @@post_count +=1
+   Post.all.each do |title|
+     @@post_count +=1
+   end
  end
 
  def self.post_count
