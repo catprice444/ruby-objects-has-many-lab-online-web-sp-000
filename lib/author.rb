@@ -9,7 +9,7 @@ class Author
   end
 
  def posts
-   @posts
+   Post.all.select {|post| post.author == self}
  end
 
  def add_post(post)
@@ -28,5 +28,5 @@ class Author
  def self.post_count
    @@post_count
  end
- 
+
 end
