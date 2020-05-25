@@ -6,6 +6,10 @@ class Song
   def initialize(name, artist=nil)
     @name = name
     @artist = artist
+    save
+  end
+
+  def save
     @@all << self
   end
 
